@@ -8,8 +8,8 @@
   outputs = { self, nixpkgs }: {
 
     pysockserve = ./pysockserve/pysockserve.nix;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+    ssh-certify = ./ssh-certify/ssh-certify.nix;
+    vouch-proxy = ./vouch-proxy/vouch-proxy.nix;
 
   };
 }
