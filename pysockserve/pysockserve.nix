@@ -3,7 +3,7 @@
 with lib;
 
 {
-  options.services.pysockserve = mkOption { type = types.attrsOf (
+  options.services.pysockserve = mkOption { default = {}; type = types.attrsOf (
     types.submodule({config, name, ...}: { options = {
       enable = mkEnableOption (mdDoc "PySockServe server instance");
 #      name = mkOption {
